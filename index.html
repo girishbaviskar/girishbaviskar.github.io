@@ -1,32 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple GitHub Pages Site</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Simple GitHub Pages Site</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About This Site</h2>
-            <p>This is a simple static website hosted on GitHub Pages. It serves as an example of how to structure a basic web project.</p>
-        </section>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Responsive design</li>
-                <li>Interactive elements</li>
-                <li>Easy to customize</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 My Simple GitHub Pages Site</p>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girish Baviskar | Portfolio</title>
+    <style>
+      /* Global styles to prevent click highlight rectangles */
+      * {
+        -webkit-tap-highlight-color: transparent !important;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        user-select: none !important;
+        outline: none !important;
+      }
+      
+      /* Allow text selection for certain elements */
+      p, h1, h2, h3, h4, h5, h6, li, span {
+        -webkit-user-select: text !important;
+        user-select: text !important;
+      }
+      
+      /* Global click state control */
+      *:active, *:focus {
+        outline: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
